@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>receive</title>
+    <link rel="stylesheet" href="receive.css">
+</head>
+<body>
+    <div>
+        <div id="receive__status" class="receive__status">waiting for connect...</div>
+        <div id="receive__my-id" class="receive__my-id"></div>
+        <div id="receive__accept-decline-container" class="receive__accept-decline-container" style="display: none;">
+            <button id="receive__accept" class="receive__accept">accept</button>
+            <button id="receive__decline" class="receive__decline">decline</button>
+        </div>
+
+
+        <div id="receive__score-common-container" class="receive__score-common-container" style="display: none;">
+            <div id="receive__score-container" class="receive__score-container">
+                <div>score:</div>
+                <div id="receive__score" class="receive__score"><span>0</span> : <span>0</span></div>
+            </div>
+            <div id="receive__score-by-games-container" class="receive__score-by-games-container">
+                <div>by games:</div>
+                <div id="receive__score-by-games" class="receive__score-by-games"><span>0</span> : <span>0</span></div>
+            </div>
+        </div>
+
+        <div id="receive__countdown" class="receive__countdown" style="opacity: 0;">game will start in <span id="receive__countdown-value" class="receive__countdown-value"></span> sec...</div>
+        <div id="receive__field-container" class="receive__field-container" style="display: none;">
+            <div id="receive__field" class="receive__field"></div>
+        </div>
+    </div>
+    <script src="node_modules/peerjs/dist/peerjs.min.js"></script>
+    <script src="receive.js"></script>
+</body>
+</html>

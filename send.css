@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.send__field {
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.send__my-id,
+.send__status,
+.send__connect-container,
+.send__connect-button,
+.send__id-to-connect,
+.send__start-container,
+.send__start,
+.send__countdown {
+    padding: 0.5em;
+}
+
+.send__field .cell {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.send__field .item {
+    background-color: #ccc;
+}
+
+.send__field .bomb {
+    background-color: #aaa;
+}
+
+.send__score-common-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.send__score-container,
+.send__score-by-games-container {
+    padding: 0.5em;
+}
+
+.send__field-container {
+    transform-origin: top left;
+}

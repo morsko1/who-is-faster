@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title {
+    text-align: center;
+}
+.index-links {
+    font-size: 1.5em;
+    text-align: center;
+}

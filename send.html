@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send</title>
+    <link rel="stylesheet" href="send.css">
+</head>
+<body>
+    <div>
+        <div id='send__status' class="send__status">try to connect to another person</div>
+        <div id="send__my-id" class="send__my-id"></div>
+        <div id="send__connect-container" class="send__connect-container">
+            <input type="text" id="send__id-to-connect" class="send__id-to-connect">
+            <button id="send__connect-button" class="send__connect-button">connect</button>
+        </div>
+        <div id="send__start-container" class="send__start-container" style="display: none;">
+            <button id="send__start" class="send__start">start</button>
+        </div>
+
+        <div id="send__score-common-container" class="send__score-common-container" style="display: none;">
+            <div id="send__score-container" class="send__score-container">
+                <div>score:</div>
+                <div id="send__score" class="send__score"><span>0</span> : <span>0</span></div>
+            </div>
+            <div id="send__score-by-games-container" class="send__score-by-games-container">
+                <div>by games:</div>
+                <div id="send__score-by-games" class="send__score-by-games"><span>0</span> : <span>0</span></div>
+            </div>
+        </div>
+        <div id="send__countdown" class="send__countdown" style="opacity: 0;">game will start in <span id="send__countdown-value" class="send__countdown-value"></span> sec...</div>
+        <div id="send__field-container" class="send__field-container" style="display: none;">
+            <div id="send__field" class="send__field"></div>
+        </div>
+    </div>
+    <script src="node_modules/peerjs/dist/peerjs.min.js"></script>
+    <script src="send.js"></script>
+</body>
+</html>
